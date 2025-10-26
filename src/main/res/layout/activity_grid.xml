@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvHeader"
+        android:text="Items"
+        android:textSize="20sp"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+    <GridView
+        android:id="@+id/grid"
+        android:numColumns="2"
+        android:verticalSpacing="12dp"
+        android:horizontalSpacing="12dp"
+        android:stretchMode="columnWidth"
+        android:layout_below="@id/tvHeader"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"/>
+
+    <LinearLayout
+        android:id="@+id/addPanel"
+        android:orientation="horizontal"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <EditText
+            android:id="@+id/etItemName"
+            android:hint="Item name"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:text="Add"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>

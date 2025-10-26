@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:padding="24dp"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title"
+        android:text="Weight Watcha's"
+        android:textSize="24sp"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:hint="Username"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:text="Log In"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btnCreateAccount"
+        android:text="Create Account"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/tvLoginHelp"
+        android:text="Tip: Password shows as dots"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"/>
+</LinearLayout>
